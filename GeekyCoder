@@ -48,6 +48,22 @@ public class HospitalProcess
                 case 1:
                 p.registerPatient();
                 System.out.println("Patient Registered Successfully !!!");
+                 p.showPatientDetail();
+                break;
+                case 2:
+                p.showPatientDetail();
+                p.updatePatientDetail();
+                break;
+                case 3:
+                p.removeInactivePatient();
+                break 4:
+                Collections.sort(arl);
+                p.showPatientDetail();
+                break;
+                default:
+                System.out.println("patient des not exist with the entered ID");
+                System.out.println("Try again");
+                break;
             }
         }
 

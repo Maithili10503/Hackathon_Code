@@ -15,3 +15,41 @@ public class HospitalProcess
 
     }
 }
+package arraylist.hospital;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.io.*;
+public class HospitalProcess 
+{
+    static ArrayList arl= new ArrayList();
+    static String joindate;
+    public static void main(String[] args) throws IOException
+    {
+        char l= 'i';
+        Calendar currentDate = Calendar.getInstance();
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyy/mm/dd HH:mm:ss");
+        joindate = formatter.format(currentDate.getTime());
+        Patient p1 = new Patient(1,"Sakshi", "Nagpur",19,'f',"Asthama",250f,joindate);
+        ar1.add(p1);
+        Patient p2= new Patient(1,"Maithili", "Nagpur",18,'f',"Sickel Cell",250f,joindate);
+        ar1.add(p2);
+        Patient p3 = new Patient(1,"Yamini", "Bhandara",20,'f',"Diabetes",250f,joindate);
+        ar1.add(p3);
+        Patient p4 = new Patient(1,"Shubharti", "Chandrapur",17,'f',"Cancer",250f,joindate);
+        ar1.add(p4);
+        do 
+        {
+            Patient p = new Patient();
+            System.out.println("Enter 1 to register a Patient \n 2 to update Patient details \n 3 to ");
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            int choice = Integer.parseInt(br.readLine());
+            switch(choice)
+            {
+                case 1:
+                p.registerPatient();
+                System.out.println("Patient Registered Successfully !!!");
+            }
+        }
+
+    }
+}

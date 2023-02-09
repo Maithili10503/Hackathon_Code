@@ -12,23 +12,6 @@ public class HospitalProcess
         Calendar currentDate = Calendar.getInstance();
         SimpleDateFormat formatter= new SimpleDateFormat("yyyy/mm/dd HH:mm:ss");
         joindate = formatter.format(currentDate.getTime());
-
-    }
-}
-package arraylist.hospital;
-import java.text.SimpleDateFormat;
-import java.util.*;
-import java.io.*;
-public class HospitalProcess 
-{
-    static ArrayList arl= new ArrayList();
-    static String joindate;
-    public static void main(String[] args) throws IOException
-    {
-        char l= 'i';
-        Calendar currentDate = Calendar.getInstance();
-        SimpleDateFormat formatter= new SimpleDateFormat("yyyy/mm/dd HH:mm:ss");
-        joindate = formatter.format(currentDate.getTime());
         Patient p1 = new Patient(1,"Sakshi", "Nagpur",19,'f',"Asthama",250f,joindate);
         ar1.add(p1);
         Patient p2= new Patient(1,"Maithili", "Nagpur",18,'f',"Sickel Cell",250f,joindate);

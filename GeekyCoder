@@ -1,0 +1,17 @@
+package arraylist.hospital;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.io.*;
+public class HospitalProcess 
+{
+    static ArrayList arl= new ArrayList();
+    static String joindate;
+    public static void main(String[] args) throws IOException
+    {
+        char l= 'i';
+        Calendar currentDate = Calendar.getInstance();
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyy/mm/dd HH:mm:ss");
+        joindate = formatter.format(currentDate.getTime());
+
+    }
+}
